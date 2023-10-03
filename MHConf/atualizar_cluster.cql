@@ -1,0 +1,1 @@
+UPDATE system.local SET cluster_name = 'thp' where key='local';
