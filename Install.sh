@@ -34,8 +34,8 @@ else
         conf_java
         conf_cassandra
         install_thehive
-        $install_dir'MHSys/thehiveP1.sh'
         apt update
+        $install_dir'MHSys/thehiveP1.sh'
     elif [ "$P_01" == "-c" ]; then
     echo "O argumento -c foi fornecido."
     elif [ "$P_01" == "-d" ]; then
