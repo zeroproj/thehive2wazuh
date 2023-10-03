@@ -1,5 +1,6 @@
 #!/bin/bash
 P_01="$1"
+install_dir="/opt/WP/"
 function install_dependencies() {
     apt-get install apt-transport-https zip unzip lsb-release curl gnupg -y
     apt-get install -y openjdk-8-jre-headless
@@ -25,11 +26,15 @@ if [ "$(id -u)" != "0" ]; then
     exit 1
 else
     if [ "$P_01" == "-a" ]; then
+        mkdir -m 755 -p "$install_dir"
+        mv * "$install_dir"
+        chmod +x "$install_dir/MHSys"/*.sh
         apt update
         install_dependencies
         conf_java
         conf_cassandra
         install_thehive
+        $install_dir'MHSys/thehiveP1.sh'
         apt update
     elif [ "$P_01" == "-c" ]; then
     echo "O argumento -c foi fornecido."

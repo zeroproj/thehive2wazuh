@@ -1,7 +1,5 @@
 #!/bin/bash
-install_dir="/opt/MHSOC/"
-
-
+install_dir="/opt/WP/"
 function instal_thehive4py(){
   /var/ossec/framework/python/bin/pip3 install thehive4py==1.8.1
   if [ $? -eq 0 ]; then

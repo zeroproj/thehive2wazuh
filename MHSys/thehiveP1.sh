@@ -1,6 +1,5 @@
 #!/bin/bash
-install_dir="/opt/MHSOC/"
-
+install_dir="/opt/WP/"
 function install_cassandra() {
     echo -e "- Instalando Pacotes Cassandra"
     apt install cassandra
@@ -78,11 +77,11 @@ function start_thehive() {
         echo "#                                                                   #"
         echo "#####################################################################"
         echo "# Acesse o seguinte documento no link abaixo:                       #"   
-        echo "# https://github.com/zeroproj/MHSoc/blob/main/MHDoc/TheHiveApi.md   #" 
+        echo "# https://github.com/zeroproj/thehive2wazuh/blob/main/MHDoc/TheHiveApi.md   #" 
         echo "# Realize a configuração do TheHive e gere a chave API necessária.  #"
         echo "# Após ter todos os dados, inicie a segunda                         #"
         echo "# parte da configuração do TheHive.                                 #"
-        echo "# Comando: /opt/MHSOC/MHSys/thehiveP2.sh                            #"
+        echo "# Comando: /opt/WP/MHSys/thehiveP2.sh                               #"
         echo "#####################################################################"
         echo ""
         read -p "Pressione Enter para continuar..."
