@@ -4,6 +4,9 @@ Este projeto oferece uma integração perfeita entre o Wazuh, um Sistema de Gere
 
 # Instalação
 
-chmod +x install.sh
+sudo chmod +x install.sh
+sudo ./install.sh -a
 
-./install.sh -a
+# Compatibilidade: 
+
+Ubuntu 22.04 Server LTS
