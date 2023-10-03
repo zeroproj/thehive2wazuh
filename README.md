@@ -5,4 +5,5 @@ Este projeto oferece uma integração perfeita entre o Wazuh, um Sistema de Gere
 # Instalação
 
 chmod +x install.sh
+
 ./install.sh -a
