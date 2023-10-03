@@ -10,3 +10,8 @@ sudo ./install.sh -a
 # Compatibilidade: 
 
 Ubuntu 22.04 Server LTS
+
+# Referencias
+
+crow1011/wazuh2thehive: Wazuh integration TheHive: https://github.com/crow1011/wazuh2thehive
+Home – TheHive Project Documentation: https://docs.thehive-project.org/thehive/
